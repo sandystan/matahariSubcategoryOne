@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <style>
+
+   body {
+            font-family: 'Lato';
+        }
+        h5 {
+            margin: 20px 0px 20px 0px;
+            font-family:'Lato';
+              font-weight: bold;
+
+        }
+        
+        
+        .image:hover {
+ 
+  box-shadow: 50px blue;
+  transform: translateY(4px);
+  
+}
+
+       /* img {
+            vertical-align: middle;
+            max-width: 90px;
+            width: 90px;
+            max-height: 100%;
+            /*margin: 0%;*/
+            /*padding-right: 2px;*/
+        /*}*/
+       /* button {
+            padding: 2px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            /*height: 10%;*/
+            /*font-size: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid steelblue;
+            -webkit-border-radius: 10px;
+            background-color: white;
+        }*/
+        button:hover {
+            -webkit-box-shadow: 100px 600px 500px #ccc;
+            box-shadow: 2px 6px 5px #ccc;
+            -moz-box-shadow: 100px 600px 100px #ccc;
+            border: 3px solid #385072;
+            -moz-border-radius: 10px;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        button {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+  <script type="text/javascript">
+      
+      window.addEventListener('load', (event) => {
+            
+            const { title } = Qs.parse(location.search, { ignoreQueryPrefix: true })
+        document.getElementById("heading").innerHTML = title 
+    })
+
+    
+        function back() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "@go-back"
+                }),
+                "*"
+            );
+        }
+
+        
+
+        function Pembayaran() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "please suggest me how to do the pembayaran"
+                }),
+                "*"
+            );
+
+        }
+        function ovo() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "show me the ovo prompt"
+                }),
+                "*"
+            );
+
+        }
+
+        function kredivo() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "show me more of kredivo prompt"
+                }),
+                "*"
+            );
+
+        }
+
+        function credit() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "show me kartu kredit prompt"
+                }),
+                "*"
+            );
+
+        }
+
+
+
+        function bt() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "show me the bank transfer prompt"
+                }),
+                "*"
+            );
+
+        }
+
+        function cod() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "show me cod prompt"
+                }),
+                "*"
+            );
+
+        }
+
+        function indo() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "show me indomaret prompt"
+                }),
+                "*"
+            );
+
+        }
+
+
+        function bca() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "show me BCA Klikpay prompt"
+                }),
+                "*"
+            );
+
+        }
+
+
+
+
+
+
+
+
+
+
+  </script>
+    <div class = "image">
+    <img src="https://cdn.yellowmessenger.com/KseiGAPc8y401621566579976.jpeg" alt="" style="float: right;width:25px;height:25px;max-width: 40px;max-height: 40px;margin-right: 4px;" onclick="back()">
+    </div>
+    </br>
+   <!-- <b> <h5 id = "heading">Please choose the payment tutorial below</h5></b> -->
+
+
+
+    
+
+    <button type="button"   onclick="Pembayaran()" class="left primary-btn col-xs-11 text-left" style="padding: 2px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            height: 55px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid steelblue;
+            -webkit-border-radius: 10px;
+            background-color: white;
+           font-family: 'Lato',sans-serif" >
+        <img style ="vertical-align: middle;
+            max-width: 90px;
+            width: 45%;
+            height: 70%;
+            
+            /*margin: 0%;*/
+            padding-left: 38px;" src="https://cdn.yellowmessenger.com/dS2JDpbNXkgZ1626067510525.png" alt="Place Holder" />  Pembayaran
+
+    </button>
+
+
+
+
+
+    <button type="button"   onclick="ovo()" class="left primary-btn col-xs-11 text-left" style="padding: 2px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            height: 55px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid steelblue;
+            -webkit-border-radius: 10px;
+            background-color: white;
+           font-family: 'Lato',sans-serif" >
+        <img style ="vertical-align: middle;
+            max-width: 90px;
+            width: 45%;
+            height: 70%;
+            
+            
+            /*margin: 0%;*/
+            padding-left: 38px;" src="https://cdn.yellowmessenger.com/4UIDxLbkdNL41621344251257.png" alt="Place Holder" /> OVO
+    </button>
+
+    <button type="button"   onclick="kredivo()" class="left primary-btn col-xs-11 text-left" style="padding: 2px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            height: 55px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid steelblue;
+            -webkit-border-radius: 10px;
+            background-color: white;
+           font-family: 'Lato',sans-serif" >
+        <img style ="vertical-align: middle;
+            max-width: 90px;
+            width: 45%;
+            height: 70%;
+            
+            
+            /*margin: 0%;*/
+            padding-left: 38px;" src="https://cdn.yellowmessenger.com/LbhdC5FtN3Io1621343965740.png" alt="Place Holder" /> Kredivo
+    </button>
+
+    <button type="button"   onclick="credit()" class="left primary-btn col-xs-11 text-left" style="padding: 2px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            height: 55px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid steelblue;
+            -webkit-border-radius: 10px;
+            background-color: white;
+           font-family: 'Lato',sans-serif" >
+        <img style ="vertical-align: middle;
+            max-width: 90px;
+            width: 45%;
+            height: 70%;
+            
+            
+            /*margin: 0%;*/
+            padding-left: 38px;" src="https://cdn.yellowmessenger.com/71his7typOlD1626246598146.png" alt="Place Holder" /> Kartu Kredit
+    </button>
+
+     <button type="button"   onclick="bt()" class="left primary-btn col-xs-11 text-left" style="padding: 2px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            height: 55px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid steelblue;
+            -webkit-border-radius: 10px;
+            background-color: white;
+           font-family: 'Lato',sans-serif" >
+        <img style ="vertical-align: middle;
+            max-width: 90px;
+            width: 45%;
+            height: 70%;
+            
+            
+            /*margin: 0%;*/
+            padding-left: 38px;" src="https://cdn.yellowmessenger.com/C86SL9FHw4sU1626246858245.png" alt="Place Holder" /> Bank Transfer Dan Virtual &ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;Account
+    </button>
+
+
+
+    <button type="button"   onclick="cod()" class="left primary-btn col-xs-11 text-left" style="padding: 2px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            height: 55px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid steelblue;
+            -webkit-border-radius: 10px;
+            background-color: white;
+           font-family: 'Lato',sans-serif" >
+        <img style ="vertical-align: middle;
+            max-width: 90px;
+            width: 45%;
+            height: 70%;
+            
+            
+            /*margin: 0%;*/
+            padding-left: 38px;" src="https://cdn.yellowmessenger.com/iuUkQ0dUzdVG1626247046473.png" alt="Place Holder" /> COD (Cash On Delivery) 
+    </button>
+
+<button type="button"   onclick="indo()" class="left primary-btn col-xs-11 text-left" style="padding: 2px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            height: 55px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid steelblue;
+            -webkit-border-radius: 10px;
+            background-color: white;
+           font-family: 'Lato',sans-serif" >
+        <img style ="vertical-align: middle;
+            max-width: 90px;
+            width: 45%;
+            height: 70%;
+            
+            
+            /*margin: 0%;*/
+            padding-left: 38px;" src="https://cdn.yellowmessenger.com/iyZhPithmt171621346414029.png" alt="Place Holder" /> Indomaret 
+    </button>
+
+
+
+<button type="button"   onclick="bca()" class="left primary-btn col-xs-11 text-left" style="padding: 2px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            height: 55px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid steelblue;
+            -webkit-border-radius: 10px;
+            background-color: white;
+           font-family: 'Lato',sans-serif" >
+        <img style ="vertical-align: middle;
+            max-width: 90px;
+            width: 45%;
+            height: 70%;
+            
+            
+            /*margin: 0%;*/
+            padding-left: 38px;" src="https://cdn.yellowmessenger.com/GpSauZ1UhwUS1621347184423.png" alt="Place Holder" />BCA Klikpay
+    </button>
+
+
+
+
+</body>
+
+</html>
